@@ -1,0 +1,248 @@
+s*{
+    box-sizing: border-box;
+    flex: none;
+}
+body{
+    margin: 0%;
+}
+.bodyheadernav{
+    margin: 0px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: rgba(53, 53, 92, 0.616);
+    height: 50px;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+    word-spacing: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.bodyheadernav a{
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    word-spacing: 2px;
+    
+}
+.bodyheadernav a::before{
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height:20px;
+    background-image: url("facebook.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.bodyheadernav .twitter::before{
+    background-image: url("twitter.png")
+}
+.bodyheadernav .watsapp::before{
+    background-image: url("WhatsApp.png");
+
+}
+.bodyheadernav .émail::before{
+    background-image: url("gmail.png")
+}
+
+@media screen and (max-width: 760px){
+   
+    .bodyheadernav{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        
+        
+       
+    }
+    .bodyheadernav a{
+        margin: 5px 0;
+    }
+}
+.bodyarticle{
+    position: relative;
+    top: 100px;
+    display: flex;
+    width: 1;
+    justify-content: center;
+    height: auto;
+    
+}
+
+.bodyarticlediv1{
+    
+    display: flex;
+    flex-direction:column ;
+    width:250px;
+    box-shadow: rgb(194, 186, 186) 4px 4px 10px 1px, rgb(230, 221, 221) -4px -4px 10px 1px ;
+    background-color: rgba(219, 207, 207, 0.486);
+    flex: none;
+    
+}
+.bodyarticlediv1 a{
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 45px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.658);
+}
+.bodyarticlediv1 a:first-child{
+    color: black;
+    font-weight:bolder ;
+}
+.bodyarticlediv1 a:hover{
+    
+    transform: scale( 1.0625, 1.0625);
+    transition: transform .3S;
+}
+.bodyarticlediv1 a::before{
+    position: relative;
+    right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("etoile.png");
+    background-size: 25px 25px;
+    opacity: .342;
+}
+.bodyarticlediv1 a:first-child::before{
+    position: relative;
+    right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("etoile.png");
+    background-size: 25px 25px;
+    opacity: 1;
+}
+.bodyarticlediv2 {
+    flex: none;
+    width: 400px;
+    height: 350px;
+    margin-left: 50px;
+    box-shadow: rgb(194, 186, 186) 4px 4px 10px 1px, rgb(230, 221, 221) -4px -4px 10px 1px ;
+}
+.bodyarticlediv2 input{
+    font-size: 16px;
+    width: 365px;
+    margin: 10px 15px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    
+}
+.bodyarticledivform{
+    position: relative;
+    top: 50px;
+    height: 250px
+}
+button{
+    font-size: 16px;
+ background-color: blue;
+ color: white;
+ border: transparent solid;
+ border-radius: 5px;
+ width: 165px ;
+ height: 50px;
+ position: relative;
+ top: 20px;
+ left: 100px;
+
+}
+@media screen and (max-width: 760px){
+    body{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .bodyarticle{
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .bodyarticlediv1{
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        box-shadow: none;
+    }
+    .bodyarticlediv2{
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        box-shadow: none;
+        margin: 0;
+    }
+    .bodyarticledivform{
+        position: relative;
+        top: 0;
+        width: 100%;
+    }  
+    .bodyarticlediv2 input{
+        font-size: 16px;
+        width: 100%;
+        margin: 10px 0;
+        height: 50px;
+        border: 1px solid;
+        border-radius: 10px;
+        
+    }
+   
+}
+
+.bodyfooter{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+    
+.bodyfooter1{
+    width: 50%;
+    height: 50px;
+    background-color: rgb(115, 171, 255);
+}
+.border{
+    display: block;
+    background-color: black;
+    border-top: 50px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid rgb(115, 171, 255);
+    border-left: 50px solid rgb(115, 171, 255);
+
+}
+.bodyfooter2{
+    width: 50%;
+    height: 50px;
+    background-color: black;
+}
+@media screen and (max-width: 760px){
+    .bodyfooter{
+        position: relative;
+       /* bottom:  -66px
+        display: flex;
+        flex-direction: column;;*/
+        
+    }
+}
+.bodyfoot1{
+    
+    width: 50%;
+    height: 50px;
+    
+}
